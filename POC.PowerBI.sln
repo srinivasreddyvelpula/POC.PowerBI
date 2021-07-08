@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.PowerBI", "POC.PowerBI\POC.PowerBI.csproj", "{4FDEC75D-3982-451F-AC0A-A8EE978A297F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.PowerBI.API", "POC.PowerBI.API\POC.PowerBI.API.csproj", "{58705B9A-4709-4B9A-AD21-54D2EC2CA210}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FDEC75D-3982-451F-AC0A-A8EE978A297F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDEC75D-3982-451F-AC0A-A8EE978A297F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDEC75D-3982-451F-AC0A-A8EE978A297F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDEC75D-3982-451F-AC0A-A8EE978A297F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58705B9A-4709-4B9A-AD21-54D2EC2CA210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58705B9A-4709-4B9A-AD21-54D2EC2CA210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58705B9A-4709-4B9A-AD21-54D2EC2CA210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58705B9A-4709-4B9A-AD21-54D2EC2CA210}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6496F84D-F9B0-4629-88F5-5673B105C903}
+	EndGlobalSection
+EndGlobal

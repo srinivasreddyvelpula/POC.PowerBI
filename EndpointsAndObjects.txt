@@ -1,0 +1,65 @@
+https://localhost:44314/sample/UploadDataset
+
+{
+    "name": "SalesMarketing3",
+    "tables": [
+        {
+            "name": "Product",
+            "columns": [
+            {
+                "name": "ProductID",
+                "dataType": "Int64"
+            },
+            {
+                "name": "Manufacturer",
+                "dataType": "string"
+            },
+            {
+                "name": "Category",
+                "dataType": "string"
+            },
+            {
+                "name": "Segment",
+                "dataType": "string"
+            },
+            {
+                "name": "Product",
+                "dataType": "string"
+            },
+            {
+                "name": "IsCompete",
+                "dataType": "bool"
+            }
+            ]
+        }
+    ]
+}
+
+https://localhost:44314/sample/c865796d-ca47-4d3d-939a-9125d680ae2d/table/Product/AddRows
+
+{
+  "rows": [
+    {
+      "ProductID": 1,
+      "Manufacturer": "Adjustable Race",
+      "Category": "Components",
+      "IsCompete": true
+    },
+    {
+      "ProductID": 2,
+      "Manufacturer": "LL Crankarm",
+      "Category": "Components",
+      "IsCompete": true
+    },
+    {
+      "ProductID": 3,
+      "Manufacturer": "HL Mountain Frame - Silver",
+      "Category": "Bikes",
+      "IsCompete": true
+    }
+  ]
+}
+
+https://localhost:44314/sample/ImportPBIX/OpportunityAnalysisFromAPI
+
+file : upload file
