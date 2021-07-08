@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "f6711e2d-3ad3-43c4-8ed9-455a5b1c314d",
+		"name": "Power BI POC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UploadDataset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"SalesMarketing3\",\r\n    \"tables\": [\r\n        {\r\n            \"name\": \"Product\",\r\n            \"columns\": [\r\n            {\r\n                \"name\": \"ProductID\",\r\n                \"dataType\": \"Int64\"\r\n            },\r\n            {\r\n                \"name\": \"Manufacturer\",\r\n                \"dataType\": \"string\"\r\n            },\r\n            {\r\n                \"name\": \"Category\",\r\n                \"dataType\": \"string\"\r\n            },\r\n            {\r\n                \"name\": \"Segment\",\r\n                \"dataType\": \"string\"\r\n            },\r\n            {\r\n                \"name\": \"Product\",\r\n                \"dataType\": \"string\"\r\n            },\r\n            {\r\n                \"name\": \"IsCompete\",\r\n                \"dataType\": \"bool\"\r\n            }\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44314/sample/UploadDataset",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"sample",
+						"UploadDataset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddRows",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rows\": [\r\n    {\r\n      \"ProductID\": 1,\r\n      \"Manufacturer\": \"Adjustable Race\",\r\n      \"Category\": \"Components\",\r\n      \"IsCompete\": true\r\n    },\r\n    {\r\n      \"ProductID\": 2,\r\n      \"Manufacturer\": \"LL Crankarm\",\r\n      \"Category\": \"Components\",\r\n      \"IsCompete\": true\r\n    },\r\n    {\r\n      \"ProductID\": 3,\r\n      \"Manufacturer\": \"HL Mountain Frame - Silver\",\r\n      \"Category\": \"Bikes\",\r\n      \"IsCompete\": true\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44314/sample/c865796d-ca47-4d3d-939a-9125d680ae2d/table/Product/AddRows",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"sample",
+						"c865796d-ca47-4d3d-939a-9125d680ae2d",
+						"table",
+						"Product",
+						"AddRows"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ImportPBIX",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/v-anchalla/Downloads/Opportunity Analysis Sample PBIX.pbix"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44314/sample/ImportPBIX/OpportunityAnalysisFromAPI",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"sample",
+						"ImportPBIX",
+						"OpportunityAnalysisFromAPI"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
